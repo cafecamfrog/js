@@ -1,4 +1,3 @@
-// JavaScript Document
 var normal="abcdefghijklmnopqrstuvwxyz?.<>"
 var changed="ªβÇ∂єƒɡħiĴкℓ㎡иøק٩яŜ†ǜvωχчž?•«»"
 
