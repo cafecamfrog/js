@@ -1,10 +1,9 @@
 // JavaScript Document
+var normal="abcdefghijklmnopqrstuvwxyz?.<>"
+var changed="ªβÇ∂єƒɡħiĴкℓ㎡иøק٩яŜ†ǜvωχчž?•«»"
 
-var normalb="abcdefghijklmnopqrstuvwxyz?+_-"
-var changedb="двÇδзfбнijкlмиøрqяsтцvщxчz？＋＿－"
 
-
-function changeText(_in, _out)
+function change(_in, _out)
 {
   var s="";
   var n=_in.value.toLowerCase();
@@ -14,9 +13,9 @@ function changeText(_in, _out)
   for(i=0; i<n.length; i++)
   {
     var c=n.charAt(i);
-    for(j=0; (j<normalb.length)&&(c!=normalb.charAt(j)); j++);
-    if (j<normalb.length) { 
-      s+=changedb.charAt(j);} else {
+    for(j=0; (j<normal.length)&&(c!=normal.charAt(j)); j++);
+    if (j<normal.length) { 
+      s+=changed.charAt(j);} else {
       s+=c;
     }
   }
